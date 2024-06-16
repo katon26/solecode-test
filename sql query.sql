@@ -19,4 +19,21 @@ FROM Pengguna p
 JOIN Peminjaman pm ON p.id_user = pm.id_user
 JOIN Buku b ON pm.id_buku = b.id_buku
 GROUP BY p.id_user;
--- masih error, belum bisa menampilkan daftar buku yang dipinjam oleh user
+
+CREATE TEMPORARY TABLE TempUserBooks (
+    No INT,
+    User VARCHAR(255),
+    Buku VARCHAR(255)
+);
+
+INSERT INTO TempUserBooks (No, User, Buku)
+SELECT p.id_user AS No, p.nama_user AS User, b.judul AS Buku
+FROM Pengguna p
+JOIN Peminjaman pm ON p.id_user = pm.id_user
+JOIN Buku b ON pm.id_buku = b.id_buku
+ORDER BY p.id_user, b.judul DESC;
+
+SELECT No, User, GROUP_CONCAT(Buku SEPARATOR ', ') AS Buku
+FROM TempUserBooks
+GROUP BY No, User
+ORDER BY No;
