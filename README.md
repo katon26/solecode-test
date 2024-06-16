@@ -1,7 +1,7 @@
 ## Solecode test
 
 ### Description
-Just HTML with cdn Bootstrap. Only publicly available for testing purposes. It will be made private within 2-3 weeks due to the content case study was confidential.
+HTML with CDN Bootstrap CSS. Only publicly available for testing purposes. It will be made private within the next 2-3 weeks due to the content case study was confidential.
 
 <!-- make text clickable to file algorithm.js -->
 ## 1 HTML & CSS
@@ -12,6 +12,9 @@ Just HTML with cdn Bootstrap. Only publicly available for testing purposes. It w
 - [DB](siperpus.sql)
 - [Initial Data](initialData.sql)
 - [Manipulasi Data](sql%20query.sql)
+
+### ERD
+![ERD](ERD_siperpus.png)
 
 ### Query Results
 ![1](query1.png)
