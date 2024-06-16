@@ -6,7 +6,7 @@ Just HTML with cdn Bootstrap. Only publicly available for testing purposes. It w
 <!-- make text clickable to file algorithm.js -->
 ## 1 HTML & CSS
 - [HTML](/src/index.html)
-- [Halaman tambah buku](/src/add-book.html)
+- [Halaman tambah buku](/src/add-books.html)
 
 ## 2 SQL
 - [SQL](sql.sql)
